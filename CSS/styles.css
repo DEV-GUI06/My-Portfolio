@@ -34,7 +34,51 @@ body {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#102130",GradientType=1);
 }
+
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(13, 28, 41);
+  border-radius: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#nav-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+#nav-bar li {
+  padding: 20px;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  transition: 0.3s;
+  padding: 5px 5px;
+}
+
+#nav-bar a:hover {
+  color: #66adf6;
+  background-color: rgba(102, 173, 246, 0.1);
+  transition: 0.3s;
+}
+
+.nav-intro {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,6 +104,7 @@ h1 {
   margin: 0 10px;
   text-decoration: none;
 }
+
 .social-links img {
   width: 40px;
   margin: 20px;
@@ -70,9 +115,11 @@ h1 {
   padding: 60px;
   text-align: center;
 }
+
 #sobre h2 {
   text-align: justify;
 }
+
 #sobre p {
   text-align: justify;
   margin-bottom: 10px;
@@ -84,6 +131,7 @@ h1 {
   margin-top: 50px;
   margin-bottom: 55px;
 }
+
 .seta1 img,
 .seta2 img {
   width: 50px;
@@ -97,6 +145,7 @@ h1 {
   align-items: center;
   text-align: center;
 }
+
 #projetos .projeto {
   background-color: #12229d;
   width: 90%;
@@ -115,6 +164,7 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
 .loading div {
   width: 40px;
   height: 40px;
@@ -123,15 +173,19 @@ h1 {
   box-shadow: 0 -0.4rem rgba(60, 0, 80, 0.1) inset;
   animation: cycle 1s ease-in-out infinite;
 }
+
 .loading div:nth-child(1) {
   animation-delay: 0;
 }
+
 .loading div:nth-child(2) {
   animation-delay: 0.2s;
 }
+
 .loading div:nth-child(3) {
   animation-delay: 0.4s;
 }
+
 @keyframes cycle {
   0% {
     transform: translateY(0);
@@ -152,10 +206,12 @@ h1 {
   border-radius: 15px;
   transition: 0.3s;
 }
+
 .btn:hover {
   background-color: #12229d;
   transition: 0.3s;
 }
+
 .btn img {
   margin-bottom: -12px;
   margin-left: 10px;
@@ -167,13 +223,16 @@ h1 {
   padding: 20px;
   text-align: center;
 }
+
 #habilidades ul {
   list-style: none;
 }
+
 .hbl li {
   display: inline-block;
   margin: 1rem;
 }
+
 #habilidades img {
   margin-bottom: -12px;
   margin-left: 10px;
@@ -187,38 +246,81 @@ h1 {
   background-color: #020024;
   padding: 30px;
 }
+
 #contato h2 {
   margin: 10px;
 }
+
 #contato img {
   width: 100px;
   margin: 10px;
   border-radius: 100px;
 }
+
 #contato a {
   transition: 0.3s;
   color: #66adf6;
   margin: 10px;
 }
+
 #contato a:hover {
   transition: 0.3s;
   color: #fff;
 }
 
-/* Responsividade */
+/* Estilizando o botão de voltar ao topo */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #66adf6;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 16px;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  transition: 0.3s;
+  background-color: #12229d;
+}
+
+
+/* Responsividade para dispositivos menores */
 @media (max-width: 768px) {
-  #projetos {
-    padding: 5%;
+  #nav-bar {
+    flex-direction: column;
   }
-  .projeto {
-    width: 100%;
-    padding: 20px;
+
+  #nav-bar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav-bar li {
+    padding: 10px;
   }
 
   .intro img {
     width: 200px;
   }
+
   .social-links img {
     width: 30px;
+  }
+
+  #projetos {
+    padding: 5%;
+  }
+
+  .projeto {
+    width: 100%;
+    padding: 20px;
   }
 }
