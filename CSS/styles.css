@@ -109,6 +109,12 @@ h1 {
   width: 40px;
   margin: 20px;
   border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.2); /* Aumenta o tamanho da imagem */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra para destacar */
 }
 
 #sobre {
@@ -137,67 +143,54 @@ h1 {
   width: 50px;
 }
 
-/* Estilizando a section projetos */
 #projetos {
-  padding: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 40px 10px;
+  text-align: center;
+}
+#projetos h2 {
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+.projetos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.projeto {
   text-align: center;
 }
 
-#projetos .projeto {
-  background-color: #12229d;
-  width: 90%;
+.project-image {
+  width: 65%;
   max-width: 400px;
-  padding: 30px;
-  margin: 10px 0;
+  height: auto;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-buttons {
+  margin-top: 10px;
   display: flex;
+  gap: 10px;
   justify-content: center;
-  align-items: center;
 }
 
-.loading {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  align-items: center;
+.project-buttons .btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 15px;
 }
-
-.loading div {
-  width: 40px;
-  height: 40px;
-  background: white;
-  border-radius: 50%;
-  box-shadow: 0 -0.4rem rgba(60, 0, 80, 0.1) inset;
-  animation: cycle 1s ease-in-out infinite;
+.project-buttons .btn:hover {
+  color: #66adf6;
+  background-color: rgba(102, 173, 246, 0.1);
+  transition: 0.3s;
 }
-
-.loading div:nth-child(1) {
-  animation-delay: 0;
-}
-
-.loading div:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.loading div:nth-child(3) {
-  animation-delay: 0.4s;
-}
-
-@keyframes cycle {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(1rem);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 .btn {
   background-color: #66adf6;
   padding: 20px 20px;
@@ -288,11 +281,12 @@ h1 {
 
 #scrollToTopBtn:hover {
   transition: 0.3s;
-  background-color: #12229d;
+  transform: scale(1.1);
 }
 
 
 /* Responsividade para dispositivos menores */
+
 @media (max-width: 768px) {
   #nav-bar {
     flex-direction: column;
@@ -322,5 +316,8 @@ h1 {
   .projeto {
     width: 100%;
     padding: 20px;
+  }
+  .project-image {
+    max-width: 300px;
   }
 }
