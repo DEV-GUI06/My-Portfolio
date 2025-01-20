@@ -1,3 +1,4 @@
+
 /* Resetando margens e padding */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
@@ -9,6 +10,7 @@
 
 html,
 body {
+  scroll-behavior: smooth; /* Adiciona um efeito de rolagem suave */
   overflow-x: hidden; /* Impede o scroll horizontal */
   font-family: "Poppins", sans-serif;
   background-color: #030724;
@@ -120,6 +122,8 @@ h1 {
 #sobre {
   padding: 60px;
   text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 #sobre h2 {
@@ -177,7 +181,7 @@ h1 {
   justify-content: center;
 }
 
-.project-buttons .btn {
+.project-buttons .btn-project {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
   text-decoration: none;
@@ -185,25 +189,31 @@ h1 {
   border-radius: 5px;
   transition: 0.3s;
   font-size: 15px;
+  box-shadow: 0 0 4px #000e1e;
 }
-.project-buttons .btn:hover {
+.project-buttons .btn-project:hover {
   color: #66adf6;
   background-color: rgba(102, 173, 246, 0.1);
   transition: 0.3s;
 }
+
+.btn{background-image: linear-gradient(to right, #061b32 0%, #1257a4  51%, #061b32  100%)}
 .btn {
   background-color: #66adf6;
+  background-size: 200% auto;
   padding: 20px 20px;
   color: #fff;
   text-decoration: none;
   border-radius: 15px;
-  transition: 0.3s;
+  box-shadow: 0 0 7px #5885b6;
+  border: none;
+  transition: 0.5s;
 }
 
 .btn:hover {
-  background-color: #12229d;
-  transition: 0.3s;
-}
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;}
 
 .btn img {
   margin-bottom: -12px;
@@ -284,6 +294,13 @@ h1 {
   transform: scale(1.1);
 }
 
+/* Responsividade para dispositivos maiores */
+
+@media (min-width: 2000px) {
+  #sobre{
+    max-width: 70%;
+  }
+}
 
 /* Responsividade para dispositivos menores */
 
