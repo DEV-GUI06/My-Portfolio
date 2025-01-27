@@ -8,6 +8,30 @@
   box-sizing: border-box;
 }
 
+/* Personalizar a barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background: #020024; /* Cor do fundo da trilha */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #66adf6; /* Cor da barra de rolagem */
+  border-radius: 10px;
+  border: 2px solid #020024; /* Bordas para criar contraste */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1257a4; /* Cor ao passar o mouse */
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #5885b6; /* Cor ao clicar */
+}
+
+
 html,
 body {
   scroll-behavior: smooth; /* Adiciona um efeito de rolagem suave */
@@ -280,7 +304,7 @@ h1 {
   color: white;
   border: none;
   border-radius: 40px;
-  padding: 16px;
+  padding: 12px;
   font-size: 30px;
   cursor: pointer;
   display: none;
