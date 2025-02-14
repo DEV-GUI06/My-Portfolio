@@ -15,7 +15,7 @@
   <body>
     <header>
       <nav id="nav-bar">
-        <ul>
+        <ul class="nav-links">
           <li><a href="#sobre">Sobre mim</a></li>
           <li><a href="#habilidades">Habilidades e Projetos</a></li>
           <li><a href="#contato">Contato</a></li>
@@ -26,14 +26,19 @@
     <nav class="nav-intro">
       <div class="intro">
         <img src="imgs/foto.jpg" alt="Guilherme Batista" />
-        <h1 class="text-intro">Olá, eu sou Guilherme Batista</h1>
-        <p>Estudante de programação para se tornar desenvolvedor Full-Stack.</p>
+        <h1 class="text-intro">Olá, me chamo Guilherme!</h1>
+        <p>Seja bem vindo. Conheça um pouco mais sobre mim e meus projetos.</p>
         <div class="social-links">
           <a href="https://github.com/DEV-GUI06" target="_blank"
             ><img src="./imgs/github.png" alt="GitHub"
           /></a>
           <a href="https://www.instagram.com/guilhermedev_" target="_blank"
             ><img src="./imgs/instagram.png" alt="Instagram"
+          /></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61572831226969"
+            target="_blank"
+            ><img src="./imgs/facebook.png" alt="Facebook"
           /></a>
           <a
             href="https://www.linkedin.com/in/guilherme-batista-santos/"
@@ -49,24 +54,30 @@
     </div>
 
     <section id="sobre">
-      <h2>Sobre Mim</h2>
-      <p>
-        Atualmente estou estudando programação e busco trabalhar na área de
-        Full-Stack. Em meus estudos estou cursando Front-End na
-        Danki-Code e logo depois irei me aprofundar ainda mais em JavaScript
-        conciliando Frameworks e BackEnd.<br />
-        Tenho como objetivo cursar ADS(Análise e Desenvolvimento de Sistemas)
-        para prática e uma visão mais ampla da área.<br />
-        Usei dos meus conhecimentos, vídeos e IA para criação deste portfólio,
-        conforme creço na área este portfólio também irá se atualizar...
-      </p>
-      <br />
-      <a
-        class="btn"
-        href="https://dev-gui06.github.io/My-Portfolio/documents/CV_Guilherme_Batista.pdf"
-        target="_blank"
-        >Ver Currículo<img src="./imgs/documentos-google.png" alt="CV"
-      /></a>
+      <div class="container-sobre">
+        <h2>Sobre Mim</h2>
+        <p>
+          Atualmente, estou me especializando em programação e buscando atuar
+          como desenvolvedor Full-Stack. Estou cursando Front-End na Danki Code
+          e, em seguida, pretendo aprofundar meus conhecimentos em frameworks e
+          desenvolvimento Back-End. <br />
+          Além disso, tenho o objetivo de cursar Análise e Desenvolvimento de
+          Sistemas (ADS) para aprimorar minha prática e obter uma visão mais
+          abrangente da área de tecnologia. <br />
+          Este portfólio foi desenvolvido utilizando meus conhecimentos
+          adquiridos até o momento, aliados a pesquisas, vídeos e o apoio de
+          inteligência artificial. Conforme evoluo na área, ele será
+          continuamente atualizado para refletir minha jornada e progresso
+          profissional.
+        </p>
+        <br />
+        <a
+          class="btn"
+          href="https://dev-gui06.github.io/My-Portfolio/documents/CV_Guilherme_Batista.pdf"
+          target="_blank"
+          >Ver Currículo<img src="./imgs/documentos-google.png" alt="CV"
+        /></a>
+      </div>
     </section>
 
     <div class="seta2">
@@ -85,14 +96,18 @@
     <section id="projetos">
       <h2>Meus Projetos</h2>
       <div class="projetos-container">
-
         <div class="projeto">
           <h3>Site para cafeterias</h3>
           <img
             src="./imgs/cafeteria.png"
-            alt="Pizzas-Projeto"
+            alt="Cafeteria-Projeto"
             class="project-image"
           />
+          <div class="project-tech">
+            <img src="./imgs/html-5.png" alt="HTML" />
+            <img src="./imgs/css-3.png" alt="CSS" />
+            <img src="./imgs/js.png" alt="JS" />
+          </div>
           <div class="project-buttons">
             <a
               href="https://dev-gui06.github.io/Cafeteria_Base/"
@@ -116,6 +131,11 @@
             alt="Pizzas-Projeto"
             class="project-image"
           />
+          <div class="project-tech">
+            <img src="./imgs/html-5.png" alt="HTML" />
+            <img src="./imgs/css-3.png" alt="CSS" />
+            <img src="./imgs/js.png" alt="JS" />
+          </div>
           <div class="project-buttons">
             <a
               href="https://dev-gui06.github.io/Pizzaria-Base/"
@@ -133,12 +153,16 @@
         </div>
 
         <div class="projeto">
-          <h3>Bonaventure Hospital (Fictíco)</h3>
+          <h3>Bonaventure Hospital (Fictício)</h3>
           <img
             src="./imgs/logo.jpg"
             alt="Bonaventure Hospital"
             class="project-image"
           />
+          <div class="project-tech">
+            <img src="./imgs/html-5.png" alt="HTML" />
+            <img src="./imgs/css-3.png" alt="CSS" />
+          </div>
           <div class="project-buttons">
             <a
               href="https://dev-gui06.github.io/Bonaventure/"
@@ -162,6 +186,11 @@
             alt="Calculadora"
             class="project-image"
           />
+          <div class="project-tech">
+            <img src="./imgs/html-5.png" alt="HTML" />
+            <img src="./imgs/css-3.png" alt="CSS" />
+            <img src="./imgs/js.png" alt="JS" />
+          </div>
           <div class="project-buttons">
             <a
               href="https://dev-gui06.github.io/Calculadora-Quiz/"
@@ -190,7 +219,7 @@
           >
         </p>
         <img src="./imgs/LOGOiconWH.jpg" alt="DEV GUI" />
-        <p>© DEV GUI</p>
+        <p>©Copyright DEV GUI</p>
       </section>
     </footer>
 
