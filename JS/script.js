@@ -1,18 +1,19 @@
-// Obtém o botão
+// Obtém o botão de rolagem para o topo
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-// Quando o usuário rolar a página para baixo 300px, o botão aparece
+// Esconde o botão ao carregar a página
+scrollToTopBtn.style.display = "none";
+
+// Exibe ou oculta o botão conforme a rolagem
 window.onscroll = function () {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  if (window.scrollY > 300) {
     scrollToTopBtn.style.display = "block";
   } else {
     scrollToTopBtn.style.display = "none";
   }
 };
 
-// Quando o usuário clicar no botão, ele rolará para o topo da página
+// Quando clicar no botão, rola para o topo da página
 scrollToTopBtn.addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
-
-  
