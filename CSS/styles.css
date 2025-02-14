@@ -378,6 +378,10 @@ h1 {
     padding: 10px;
   }
 
+    .nav-intro {
+    height: 100vh;
+  }
+
   .intro img {
     width: 200px;
   }
