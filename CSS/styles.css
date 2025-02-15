@@ -119,6 +119,7 @@ header {
   border-radius: 45%;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra para destacar */
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 h1 {
@@ -379,6 +380,7 @@ h1 {
   }
 
   .intro img {
+    margin-top: 40px;
     width: 200px;
   }
 
