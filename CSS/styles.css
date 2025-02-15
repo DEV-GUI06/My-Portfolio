@@ -107,7 +107,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .intro {
@@ -400,5 +400,13 @@ h1 {
   }
   .project-image {
     max-width: 300px;
+  }
+}
+@media (max-width: 415px) {
+  .social-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-top: 10px;
   }
 }
