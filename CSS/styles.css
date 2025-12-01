@@ -147,10 +147,10 @@ h1 {
 }
 
 #sobre {
-  padding: 60px;
+   padding: 30px;
   text-align: center;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 1300px;
 }
 
 .container-sobre {
@@ -444,3 +444,4 @@ h1 {
     margin-bottom: 20px;
   }
 }
+
